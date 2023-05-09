@@ -1,8 +1,8 @@
 <html>
 
 <body>
-<div style="width:50%;margin-left:33%">
-<table style="width:66%;height:90%">
+<div id="maindiv">
+<table id="maintab">
 <tr>
 <td id="5-1" class="reds"></td>
 <td id="5-2"></td>
@@ -379,9 +379,27 @@
 	td {width:20%;height:16%;border:solid;text-align:center;border-color:black;font-size:32pt}
 	.reds {color:red}
 	.blacks {color:black}
-	.hidden {background:black;color:black}
+	.hidden {background:black;color:black;visibility:hidden}
 	.unhidden {}
 	.selected {border-color:magenta;background:lightgrey}
+	@media only screen and (max-width: 800px) {
+	 #maindiv {
+	 width:100%;
+	 margin-left:10%;
+	 }
+	 #maintab {
+	  width:66%;height:90%
+	 }
+	}
+	@media only screen and (min-width: 801px) {
+	 #maindiv {
+	 width:50%;
+	 margin-left:33%;
+	 }
+	 #maintab {
+	  width:66%;height:90%
+	 }
+	}
 </style>
 
 </head>
